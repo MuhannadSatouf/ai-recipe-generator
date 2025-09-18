@@ -1,5 +1,8 @@
 # 🍳 AI Recipe Generator
 
+
+Preview Page [https://ai-recipe-generator-kqcd7badk-muhannadsatoufs-projects.vercel.app/](https://ai-recipe-generator-kqcd7badk-muhannadsatoufs-projects.vercel.app/)
+
 A modern, intelligent web application that transforms your available ingredients into delicious, personalized recipes using the power of artificial intelligence. Built with Next.js and styled with Pepsi's signature brand colors for a vibrant, professional user experience.
 
 ![AI Recipe Generator](https://img.shields.io/badge/AI-Recipe%20Generator-blue?style=for-the-badge&logo=react)
@@ -23,7 +26,7 @@ A modern, intelligent web application that transforms your available ingredients
 - **React 19.1.0** - Modern React with latest features
 - **TypeScript 5.9.2** - Type-safe JavaScript
 - **Tailwind CSS 4.0** - Utility-first CSS framework
-
+ 
 ### Backend & AI
 - **Google Generative AI** - Gemini AI integration for recipe generation
 - **Next.js API Routes** - Serverless API endpoints

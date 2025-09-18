@@ -6,7 +6,6 @@ export async function POST(request: Request) {
   try {
     // Check if API key is configured
     const apiKey = process.env.GOOGLE_API_KEY;
-	console.log(apiKey);
     if (!apiKey) {
       return NextResponse.json({ 
         error: 'Google API key is not configured. Please add GOOGLE_API_KEY to your .env.local file.' 
