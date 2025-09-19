@@ -1,7 +1,7 @@
 # 🍳 AI Recipe Generator
 
 
-Preview Page [https://ai-recipe-generator-kqcd7badk-muhannadsatoufs-projects.vercel.app/](https://ai-recipe-generator-kqcd7badk-muhannadsatoufs-projects.vercel.app/)
+Preview Page [https://ai-recipe-generator-two-lovat.vercel.app/](https://ai-recipe-generator-two-lovat.vercel.app/)
 
 A modern, intelligent web application that transforms your available ingredients into delicious, personalized recipes using the power of artificial intelligence. Built with Next.js and styled with Pepsi's signature brand colors for a vibrant, professional user experience.
 
