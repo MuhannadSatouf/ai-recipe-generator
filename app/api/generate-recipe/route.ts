@@ -25,7 +25,32 @@ export async function POST(request: Request) {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     // The AI prompt
-    const prompt = `Create a simple recipe using the following ingredients: ${ingredients}. Provide a title, a list of ingredients, and step-by-step instructions.`;
+    const prompt = `
+You are an expert chef AI. Create a delicious and easy-to-follow recipe based on the ingredients provided.
+
+**Ingredients available:** ${ingredients}
+
+**Your task is to generate a complete recipe with the following structure:**
+
+1.  **Title:** A creative and appealing name for the dish.
+2.  **Description:** A brief, one-sentence summary of the dish (e.g., "A hearty and flavorful pasta dish perfect for a weeknight dinner.").
+3.  **Preparation Time:** An estimation of how long the recipe will take to prepare.
+4.  **Servings:** The number of people this recipe will serve.
+5.  **Ingredients List:**
+    *   List all the ingredients from the provided list with specific quantities (e.g., 1 cup, 2 tbsp, 100g).
+    *   You may add 1-2 common pantry staples if necessary (e.g., salt, pepper, olive oil), but clearly mark them as "optional" or "pantry staple".
+6.  **Step-by-Step Instructions:**
+    *   Provide clear, numbered steps for preparing the dish.
+    *   Keep the instructions concise and easy for a beginner to understand.
+7.  **Chef's Tip (Optional):** Include a helpful tip, such as a serving suggestion or a possible variation.
+
+**Constraints:**
+*   The recipe must be simple and suitable for a beginner cook.
+*   Prioritize using only the ingredients provided.
+
+Generate the recipe now.
+`;
+
 
     const result = await model.generateContent(prompt);
     const response = await result.response;
